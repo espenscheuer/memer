@@ -1,31 +1,73 @@
-.App {
-  text-align: center;
+html{
+  font-size: 16px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media only screen and (min-width:600px) {
+  html {
+  font-size: 22px;
   }
 }
+.btn {
+  margin-left: 10px;
+  margin-right: 10px;
+}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+.search {
+  width :60%;
+  margin-top: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.select {
+  margin: 10px;
+  padding-bottom: 10px;
+}
+
+.App {
+  text-align: center;
+  background-color: #b4c4e4;
+}
+
+.header { 
+  height:7.5rem;
+  width:100%;
   font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: white;
 }
 
 .App-link {
   color: #61dafb;
+}
+
+.search-bar {
+  width:100%;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+.search-settings {
+  width:20%;
+  color : gray;
+  font-size: .75rem;
+  width : 100%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rating{
+  margin-left: 10px;
+  width :20%;
+}
+
+.slider{
+  color : gray;
+  font-size: .75rem;
+  width: 20%;
+  padding-top: 5px;
+  margin-left: 30px;
+  margin-right: 50px;
 }
 
 @keyframes App-logo-spin {
@@ -35,4 +77,36 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.meme {
+  margin: .3rem;
+}
+.meme:hover {
+  cursor: pointer;
+  position: relative;
+}
+
+.meme-title {
+  display:none;
+  position:absolute;
+  width: calc(100%);
+  bottom: .3rem;
+  left: 0;
+  right:0;
+  background: rgba(255,255,255, .6);
+  font-size: .75 rem;
+  overflow:hidden;
+  font-weight: bold;
+}
+
+.meme-wrap {
+  height: calc(100vh - 7.5rem);
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  overflow:auto;
+}
+.loading {
+  width:10%;
 }
